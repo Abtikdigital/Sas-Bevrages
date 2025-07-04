@@ -35,7 +35,7 @@ const Navbar = () => {
           <Link
             to={"/about-us"}
             className={`text-[#757575] duration-500 group py-2 relative transition-all w-full text-[0.95rem] ${
-              pathname == "/about-us" && "font-bold text-black "
+              pathname == "/about-us" && "!font-bold !text-black "
             }  font-semibold hover:font-bold hover:text-black`}
           >
             About
@@ -48,7 +48,7 @@ const Navbar = () => {
           <Link
             to={"/product"}
             className={`text-[#757575] duration-500 group py-2 ${
-              pathname == "/product" && "font-bold text-black"
+              pathname == "/product" && "!font-bold !text-black"
             } relative transition-all w-full text-[0.95rem] font-semibold hover:font-bold hover:text-black`}
           >
             Product
@@ -61,7 +61,7 @@ const Navbar = () => {
           <Link
             to={"/team"}
             className={`text-[#757575] relative duration-500 ${
-              pathname == "/team" && "font-bold text-black"
+              pathname == "/team" && "!font-bold !text-black"
             } group py-2 transition-all w-full text-[0.95rem]  font-semibold hover:font-bold hover:text-black`}
           >
             Team
@@ -74,7 +74,7 @@ const Navbar = () => {
           <Link
             to={"/contact-us"}
             className={`text-[#757575] relative duration-500 py-2 group ${
-              pathname == "/contact-us" && "font-bold text-black"
+              pathname == "/contact-us" && "!font-bold !text-black"
             } transition-all w-full text-[0.95rem]  font-semibold hover:font-bold hover:text-black`}
           >
             Contact
