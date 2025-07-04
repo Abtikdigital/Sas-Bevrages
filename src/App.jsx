@@ -9,12 +9,14 @@ import Navbar from './Sections/Navbar'
 import Product from './Pages/Product'
 import Team from './Pages/Team'
 import Contact from './Pages/Contact'
+import ScrollToUp from './utils/ScrollToUp'
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <BrowserRouter>
+    <ScrollToUp/>
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/about-us' element={<About />} />

@@ -8,7 +8,7 @@ const Footer = () => {
                     <div className="mb-6 text-lg font-semibold text-black">
                         Logo Sas Beverages
                     </div>
-                    <div className="flex flex-col sm:flex-row gap-3">
+                    <div className="flex   gap-3">
                         <input
                             placeholder="Enter Mail"
                             className="bg-[#141414] heading-2 text-[#BEBEBE] p-2.5 px-4 rounded-lg  min-w-0"
