@@ -5,7 +5,7 @@ import Navbar from "../Sections/Navbar";
 import OurProducts from "../Sections/OurProducts";
 import TeamMember from "../Sections/TeamMember";
 import AboutUsImage from "../assets/Products/Product1.png";
-import HeroImage from "../assets/Hero/Image1.png";
+import HeroImage from "../assets/Hero/105349.jpg";
 import { useForm } from "react-hook-form";
 import Swal from "sweetalert2";
 import axios from "axios";
@@ -93,8 +93,9 @@ const Home = () => {
         variants={fadeIn}
         className="px-10 py-10"
       >
-        <img src={HeroImage} className="rounded-4xl" />
+        <img src={HeroImage} className="rounded-4xl  " />
       </motion.div>
+      
 
       {/* About Us */}
       <motion.section
@@ -131,7 +132,7 @@ const Home = () => {
                   }
                 }
               }}
-              className="w-full md:w-1/3 rounded-lg"
+              className="w-full md:w-1/3 rounded-lg space-y-2"
             >
               <img src={ele.img} className="w-full" />
               <h2 className="heading2">{ele.name}</h2>

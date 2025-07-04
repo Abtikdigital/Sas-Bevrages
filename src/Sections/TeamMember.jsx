@@ -75,7 +75,7 @@ const TeamMember = () => {
               animate={sectionInView ? "visible" : "hidden"}
               variants={cardElementFadeIn}
               custom={index + 2} // Start after section title and description
-              className="w-full md:w-1/3 rounded-lg"
+              className="w-full md:w-1/3 rounded-lg space-y-2"
             >
               <motion.img
                 src={ele.img}
@@ -101,7 +101,7 @@ const TeamMember = () => {
                 animate={sectionInView ? "visible" : "hidden"}
                 variants={cardElementFadeIn}
                 custom={index + 4}
-                style={{fontFamily:"Lilita One"}}
+                // style={{fontFamily:"Lilita One"}}
 
               >
                 {ele.position}
