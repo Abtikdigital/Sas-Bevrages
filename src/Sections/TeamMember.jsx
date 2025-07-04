@@ -91,6 +91,7 @@ const TeamMember = () => {
                 animate={sectionInView ? "visible" : "hidden"}
                 variants={cardElementFadeIn}
                 custom={index + 3}
+                style={{fontFamily:"Lilita One"}}
               >
                 {ele.name}
               </motion.h2>
@@ -100,6 +101,8 @@ const TeamMember = () => {
                 animate={sectionInView ? "visible" : "hidden"}
                 variants={cardElementFadeIn}
                 custom={index + 4}
+                style={{fontFamily:"Lilita One"}}
+
               >
                 {ele.position}
               </motion.h3>

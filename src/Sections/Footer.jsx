@@ -13,7 +13,9 @@ const Footer = () => {
                             placeholder="Enter Mail"
                             className="bg-[#141414] heading-2 text-[#BEBEBE] p-2.5 px-4 rounded-lg  min-w-0"
                         />
-                        <button className="linear-green-blue-btn whitespace-nowrap">
+                        <button className="linear-green-blue-btn whitespace-nowrap"
+                        style={{fontFamily:"Lilita One"}}
+                        >
                             Submit
                         </button>
                     </div>
@@ -25,7 +27,7 @@ const Footer = () => {
                             Products
                         </h2>
                         <ul className="heading2 !text-left space-y-2">
-                            <li className="relative group w-fit cursor-pointer">
+                            <li className="relative group w-fit cursor-pointer" >
                                 Beverages
                                 <div className="w-0 h-0.5 group-hover:w-full duration-500 absolute bg-gradient-to-r from-[#00EA87] to-[#78CBFF]"></div>
                             </li>

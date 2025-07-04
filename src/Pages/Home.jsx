@@ -44,10 +44,10 @@ const Home = () => {
   // Animation variants
   const fadeIn = {
     hidden: { opacity: 0, y: 20 },
-    visible: { 
-      opacity: 1, 
+    visible: {
+      opacity: 1,
       y: 0,
-      transition: { 
+      transition: {
         duration: 0.6,
         ease: "easeOut"
       }
@@ -75,13 +75,13 @@ const Home = () => {
         variants={fadeIn}
         className="px-10 flex flex-col space-y-10 py-10 justify-center items-center"
       >
-        <h1 className="heading1">Build your landings in minutes</h1>
+        <h1 className="heading1  tracking-wider "  >Build your landings in minutes</h1>
         <h2 className="heading2">
           The night is dark and full of terrors. What is dead may never die. And
           now his watch is ended. All men must die.
         </h2>
         <div className="flex justify-center items-center">
-          <button className="linear-green-blue-btn">Contact Us</button>
+          <button className="linear-green-blue-btn" style={{fontFamily:"Lilita One"}}>Contact Us</button>
         </div>
       </motion.section>
 
@@ -121,10 +121,10 @@ const Home = () => {
               animate={aboutInView ? "visible" : "hidden"}
               variants={{
                 hidden: { opacity: 0, y: 20 },
-                visible: { 
-                  opacity: 1, 
+                visible: {
+                  opacity: 1,
                   y: 0,
-                  transition: { 
+                  transition: {
                     duration: 0.6,
                     delay: index * 0.2,
                     ease: "easeOut"
@@ -191,9 +191,10 @@ const Home = () => {
               type="text"
               {...register("name", {
                 required: "* Name Is Required",
-              })}
+              })} 
             />
           </div>
+          {errors?.name && <div className="heading2 !text-red-500  !text-left">{errors?.name?.message}</div>}
           <div>
             <input
               className="bg-[#141414] heading-2 w-full text-[#BEBEBE] p-2.5 rounded-lg"
@@ -207,6 +208,7 @@ const Home = () => {
               })}
             />
           </div>
+          {errors?.email && <div className="heading2 !text-red-500 !text-left ">{errors?.email?.message}</div>}
           <div>
             <textarea
               className="w-full bg-[#141414] heading-2 text-[#BEBEBE] p-2.5 rounded-lg"
@@ -216,7 +218,9 @@ const Home = () => {
             ></textarea>
           </div>
           <div>
-            <button className="linear-green-blue-btn" type="submit">
+            <button className="linear-green-blue-btn text-white" type="submit"
+            style={{fontFamily:"Lilita One"}}
+            >
               Submit
             </button>
           </div>

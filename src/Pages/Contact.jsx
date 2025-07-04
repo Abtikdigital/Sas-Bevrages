@@ -110,7 +110,9 @@ const Contact = () => {
           custom={2}
           className="flex justify-center items-center"
         >
-          <button className="linear-green-blue-btn">Contact Us</button>
+          <button className="linear-green-blue-btn" style={{
+            fontFamily:"Lilita One"
+          }}>Contact Us</button>
         </motion.div>
       </motion.section>
 
@@ -176,20 +178,20 @@ const Contact = () => {
             className="flex flex-col space-y-3"
           >
             <div className="flex gap-3">
-              <div className="bg-[#545454] p-1.5 rounded-lg">
-                <Phone className="text-[#00EA87] w-5 h-5" />
+              <div className="bg-gradient-to-r cursor-pointer from-[#00EA87] to-[#78CBFF] text-white p-1.5 rounded-lg">
+                <Phone className="text-white w-5 h-5 " />
               </div>
               <a className="heading2 cursor-pointer">+91 9638689279</a>
             </div>
             <div className="flex gap-3">
-              <div className="bg-[#545454] p-1.5 rounded-lg">
-                <Mail className="text-[#00EA87] w-5 h-5" />
+              <div className="bg-gradient-to-r cursor-pointer from-[#00EA87] to-[#78CBFF] text-white p-1.5 rounded-lg">
+                <Mail className=" w-5 h-5" />
               </div>
               <a className="heading2 cursor-pointer">sasbevrages@gmail.com</a>
             </div>
             <div className="flex gap-3">
-              <div className="bg-[#545454] p-1.5 rounded-lg">
-                <MapPin className="text-[#00EA87] w-5 h-5" />
+              <div className="bg-gradient-to-r cursor-pointer from-[#00EA87] to-[#78CBFF] text-white p-1.5 rounded-lg">
+                <MapPin className="text-white w-5 h-5" />
               </div>
               <a className="heading2 cursor-pointer">
                 104, shilp corporate Park, Iscon Ahmedabad
@@ -220,15 +222,13 @@ const Contact = () => {
             />
           </motion.div>
           {errors?.name && (
-            <motion.div
-              initial="hidden"
-              animate={contactInView ? "visible" : "hidden"}
-              variants={elementFadeIn}
-              custom={4}
-              className="heading2 text-red-500"
+            <div
+
+
+              className="heading2 !text-red-500 !text-left"
             >
               {errors?.name?.message}
-            </motion.div>
+            </div>
           )}
           <motion.div
             initial="hidden"
@@ -250,15 +250,12 @@ const Contact = () => {
             />
           </motion.div>
           {errors?.email && (
-            <motion.div
-              initial="hidden"
-              animate={contactInView ? "visible" : "hidden"}
-              variants={elementFadeIn}
-              custom={6}
-              className="heading2 text-red-500"
+            <div
+            
+              className="heading2 !text-red-500 !text-left"
             >
               {errors?.email?.message}
-            </motion.div>
+            </div>
           )}
           <motion.div
             initial="hidden"
