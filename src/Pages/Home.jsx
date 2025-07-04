@@ -3,14 +3,45 @@ import Navbar from "../Sections/Navbar";
 import OurProducts from "../Sections/OurProducts";
 import TeamMember from "../Sections/TeamMember";
 import AboutUsImage from "../assets/Products/Product1.png";
-import HeroImage from "../assets/Hero/Image1.png"
+import HeroImage from "../assets/Hero/Image1.png";
+import { useForm } from "react-hook-form";
+import Swal from "sweetalert2";
+import axios from "axios";
 const Home = () => {
+  const {
+    register,
+    handleSubmit,
+    formState: { errors },
+  } = useForm();
+  const onSubmit = async (formData) => {
+    try {
+      let res = await axios.post("/api/contactApis.js", formData);
+      if (res.status == 201) {
+        Swal.fire({
+          icon: "success",
+          text: "You Response Has Been Submitted",
+          draggable: true,
+        });
+      } else {
+        Swal.fire({
+          icon: "error",
+          text: "Error While Inserting Data",
+          draggable: true,
+        });
+      }
+    } catch (error) {
+      Swal.fire({
+        icon: "error",
+        text: error?.response?.data?.message || "Error While Inserting Data",
+      });
+    }
+  };
   return (
     <>
       {/* Navbar Section */}
       <Navbar />
       {/* Hero Section */}
-       <section className="px-10 flex flex-col space-y-10 py-10 justify-center items-center">
+      <section className="px-10 flex flex-col space-y-10 py-10 justify-center items-center">
         <h1 className="heading1">Build your landings in minutes</h1>
         <h2 className="heading2">
           The night is dark and full of terrors. What is dead may never die. And
@@ -66,17 +97,28 @@ const Home = () => {
           </iframe>
         </div>
 
-        <form className="bg-[#82B3D1] p-8 w-full md:w-1/2 rounded-4xl flex flex-col gap-3 justify-evenly">
+        <form className="bg-[#82B3D1] p-8 w-full md:w-1/2 rounded-4xl flex flex-col gap-3 justify-evenly" onSubmit={handleSubmit(onSubmit)}>
           <div>
             <input
               className="bg-[#141414] heading-2 w-full text-[#BEBEBE] p-2.5 rounded-lg"
               placeholder="Enter Your Name"
+              type="text"
+              {...register("name", {
+                required: "* Name Is Required",
+              })}
             />
           </div>
           <div>
             <input
               className="bg-[#141414] heading-2 w-full text-[#BEBEBE] p-2.5 rounded-lg"
-              placeholder="Enter Your Number"
+              placeholder="Enter Your Mail"
+              {...register("email", {
+                required: "* Email is required",
+                pattern: {
+                  value: /^[^\s@]+@[^\s@]+\.[^\s@]+$/,
+                  message: "* Please enter a valid email address",
+                },
+              })}
             />
           </div>
           <div>
@@ -84,10 +126,11 @@ const Home = () => {
               className="w-full bg-[#141414] heading-2 text-[#BEBEBE] p-2.5 rounded-lg"
               placeholder="Enter Your Message "
               rows={3}
+              {...register("message")}
             ></textarea>
           </div>
           <div>
-            <button className="linear-green-blue-btn">Submit</button>
+            <button className="linear-green-blue-btn" type="submit">Submit</button>
           </div>
         </form>
       </section>

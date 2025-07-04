@@ -20,16 +20,19 @@ const OurProducts = () => {
         ].map((ele) => (
           <div>
             <img src={ele.img} className="w-full" />
-            <div className="flex flex-col items-start md:flex-row md:justify-between heading2">
-              Price:{ele.price}/-{" "}
-              <div className="flex">
-                {Array.from({ length: ele.star }).map(() => (
-                  <Star fill="yellow" className="outline-0 ring-0" />
-                ))}
+            <div className="p-3">
+
+              <div className="flex flex-col items-start md:flex-row md:justify-between heading2">
+                Price:{ele.price}/-{" "}
+                <div className="flex">
+                  {Array.from({ length: ele.star }).map(() => (
+                    <Star fill="#FFDF28" stroke="none" className="outline-0 ring-0" />
+                  ))}
+                </div>
               </div>
+              <h2 className="heading2 !text-left">{ele.title}</h2>
+              <p className="heading2 !text-left">{ele.description}</p>
             </div>
-            <h2 className="heading2 !text-left">{ele.title}</h2>
-            <p className="heading2 !text-left">{ele.description}</p>
           </div>
         ))}
       </div>

@@ -10,6 +10,7 @@ const Navbar = () => {
     const toggleIsOpen = () => {
         setIsOpen(!isOpen);
     };
+    
     return (
         <>
             {/* Desktop Navbar */}
