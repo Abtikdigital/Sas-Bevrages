@@ -1,10 +1,21 @@
 @import "tailwindcss";
 .linear-green-blue-btn {
-  @apply bg-gradient-to-r cursor-pointer from-[#00EA87] to-[#78CBFF] text-white text-lg font-normal rounded-lg px-4 py-1.5 hover:opacity-75 transition-all;
+  @apply bg-gradient-to-r cursor-pointer from-[#00EA87] to-[#78CBFF] text-white text-lg font-semibold rounded-lg px-4 py-1.5 hover:opacity-75 transition-all;
+
 }
 .heading1 {
-  @apply text-4xl font-bold font-serif text-center;
+  @apply text-4xl md:text-5xl font-bold tracking-wide  text-center;
+ 
 }
 .heading2 {
-  @apply text-lg font-extralight font-serif text-center text-[#757575]/90 ;
+  @apply text-base md:text-lg font-black font-serif text-center text-[#757575]/90 ;
+}
+*{
+  font-family: "Nunito Sans", sans-serif !important;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100,
+    "YTLC" 447;
 }

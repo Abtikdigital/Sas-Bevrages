@@ -46,7 +46,7 @@ const Team = () => {
         initial="hidden"
         animate={heroInView ? "visible" : "hidden"}
         variants={sectionFadeIn}
-        className="px-10 flex flex-col space-y-10 py-10 justify-center items-center"
+        className="px-10 flex flex-col space-y-5 py-5 md:space-y-10 md:py-10 justify-center items-center"
       >
         <motion.h1
           initial="hidden"
@@ -86,7 +86,7 @@ const Team = () => {
         initial="hidden"
         animate={imageInView ? "visible" : "hidden"}
         variants={sectionFadeIn}
-        className="px-10 py-10"
+        className="px-5 md:px-10 py-10"
       >
         <motion.div
           initial="hidden"

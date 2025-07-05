@@ -50,7 +50,7 @@ const about = () => {
         initial="hidden"
         animate={heroInView ? "visible" : "hidden"}
         variants={sectionFadeIn}
-        className="px-10 flex flex-col space-y-10 py-10 justify-center items-center"
+        className="px-5 md:px-10 flex flex-col space-y-5 py-5 md:space-y-10 md:py-10 justify-center items-center"
       >
         <motion.h1
           initial="hidden"
@@ -90,7 +90,7 @@ const about = () => {
         initial="hidden"
         animate={imageInView ? "visible" : "hidden"}
         variants={sectionFadeIn}
-        className="px-10 py-10"
+        className="px-5 md:px-10 py-5 md:py-10"
       >
         <motion.div
           initial="hidden"
@@ -109,7 +109,7 @@ const about = () => {
         initial="hidden"
         animate={companyInView ? "visible" : "hidden"}
         variants={sectionFadeIn}
-        className="px-10 py-10 flex flex-col md:flex-row space-y-10"
+        className="px-5 md:px-10 py-5 md:py-10 flex flex-col md:flex-row space-y-10"
       >
         <div className="w-full md:w-1/2 flex flex-col gap-6">
           <motion.h2

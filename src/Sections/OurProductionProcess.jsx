@@ -39,7 +39,7 @@ const OurProductionProcess = () => {
       initial="hidden"
       animate={sectionInView ? "visible" : "hidden"}
       variants={sectionFadeIn}
-      className="space-y-10"
+      className="space-y-5 md:space-y-10 px-5 md:px-10"
     >
       <motion.h2
         initial="hidden"
@@ -64,7 +64,7 @@ const OurProductionProcess = () => {
         initial="hidden"
         animate={sectionInView ? "visible" : "hidden"}
         variants={sectionFadeIn}
-        className="grid grid-cols-1 md:grid-rows-2 md:grid-cols-3 gap-10 p-10"
+        className="grid grid-cols-1 md:grid-rows-2 md:grid-cols-3 gap-10 md:px-10 md:py-10"
       >
         <motion.div
           initial="hidden"

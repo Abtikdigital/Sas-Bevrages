@@ -42,7 +42,7 @@ const TeamMember = () => {
         initial="hidden"
         animate={sectionInView ? "visible" : "hidden"}
         variants={sectionFadeIn}
-        className="px-10 py-10 space-y-10"
+        className="px-5 md:px-10 space-y-5 py-5 md:py-10 md:space-y-10"
       >
         <motion.h2
           initial="hidden"
@@ -79,19 +79,19 @@ const TeamMember = () => {
             >
               <motion.img
                 src={ele.img}
-                className="w-full"
+                className="w-full hover:-translate-y-2.5 hover:cursor-pointer duration-300"
                 initial="hidden"
                 animate={sectionInView ? "visible" : "hidden"}
                 variants={cardElementFadeIn}
                 custom={index + 2}
               />
               <motion.h2
-                className="heading2"
+                className="heading2 !text-black"
                 initial="hidden"
                 animate={sectionInView ? "visible" : "hidden"}
                 variants={cardElementFadeIn}
                 custom={index + 3}
-                style={{fontFamily:"Lilita One"}}
+                // style={{fontFamily:"Lilita One"}}
               >
                 {ele.name}
               </motion.h2>

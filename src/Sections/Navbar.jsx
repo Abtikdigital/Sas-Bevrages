@@ -91,7 +91,7 @@ const Navbar = () => {
             </div>
 
             {/* Mobile Navbar */}
-            <div className="flex flex-col md:hidden shadow-lg justify-center  px-4 space-y-3 py-6 sticky top-0 bg-white z-50">
+            <div className="flex flex-col md:hidden shadow-lg justify-center  px-5 space-y-3 py-6 sticky top-0 bg-white z-50">
                 <div className="flex justify-start relative items-center">
                     Logo
                     <button

@@ -82,7 +82,7 @@ const Contact = () => {
         initial="hidden"
         animate={heroInView ? "visible" : "hidden"}
         variants={sectionFadeIn}
-        className="px-10 flex flex-col space-y-10 py-10 justify-center items-center"
+        className="px-5 md:px-10 flex flex-col space-y-5 py-5 md:space-y-10 md:py-10 justify-center items-center"
       >
         <motion.h1
           initial="hidden"
@@ -122,7 +122,7 @@ const Contact = () => {
         initial="hidden"
         animate={mapInView ? "visible" : "hidden"}
         variants={sectionFadeIn}
-        className="px-10 py-10"
+        className="px-5 md:px-10 py-5 md:py-10"
       >
         <motion.div
           initial="hidden"
@@ -148,7 +148,7 @@ const Contact = () => {
         initial="hidden"
         animate={contactInView ? "visible" : "hidden"}
         variants={sectionFadeIn}
-        className="flex flex-col md:flex-row px-10 py-10 gap-6"
+        className="flex flex-col md:flex-row px-5 md:px-10 py-5 md:py-10 gap-6"
       >
         <div className="w-full md:w-1/2 space-y-6">
           <motion.h2
@@ -156,7 +156,7 @@ const Contact = () => {
             animate={contactInView ? "visible" : "hidden"}
             variants={elementFadeIn}
             custom={0}
-            className="heading1"
+            className="heading1 !text-left"
           >
             Contact Details
           </motion.h2>
@@ -165,7 +165,7 @@ const Contact = () => {
             animate={contactInView ? "visible" : "hidden"}
             variants={elementFadeIn}
             custom={1}
-            className="heading2"
+            className="heading2 !text-left"
           >
             The night is dark and full of terrors. What is dead may never die.
             And now his watch is ended. All men must die.
