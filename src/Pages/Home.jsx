@@ -71,11 +71,13 @@ const Home = () => {
         });
       }
     } catch (error) {
+      
       Swal.fire({
         icon: "error",
         text: error?.response?.data?.message || "Error While Inserting Data",
         draggable: true,
       });
+      console.error("error occured",error)
     }
   };
 
