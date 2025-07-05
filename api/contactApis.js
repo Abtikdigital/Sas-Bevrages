@@ -321,7 +321,7 @@ const handler = async (req, res) => {
     } catch (error) {
         return res
             .status(500)
-            .json({ isSuccess: false, message: "Internal Server Error" });
+            .json({ isSuccess: false, message: "Internal Server Error",error });
     }
 };
 
