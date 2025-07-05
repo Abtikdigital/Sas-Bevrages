@@ -181,19 +181,19 @@ const Contact = () => {
               <div className="bg-gradient-to-r cursor-pointer from-[#00EA87] to-[#78CBFF] text-white p-1.5 rounded-lg">
                 <Phone className="text-white w-5 h-5 " />
               </div>
-              <a className="heading2 cursor-pointer">+91 9638689279</a>
+              <a className="heading2 cursor-pointer !text-sm">+91 9638689279</a>
             </div>
             <div className="flex gap-3">
               <div className="bg-gradient-to-r cursor-pointer from-[#00EA87] to-[#78CBFF] text-white p-1.5 rounded-lg">
                 <Mail className=" w-5 h-5" />
               </div>
-              <a className="heading2 cursor-pointer">sasbevrages@gmail.com</a>
+              <a className="heading2 cursor-pointer !text-sm">sasbevrages@gmail.com</a>
             </div>
             <div className="flex gap-3">
               <div className="bg-gradient-to-r cursor-pointer from-[#00EA87] to-[#78CBFF] text-white p-1.5 rounded-lg">
                 <MapPin className="text-white w-5 h-5" />
               </div>
-              <a className="heading2 cursor-pointer">
+              <a className="heading2 cursor-pointer !text-sm">
                 104, shilp corporate Park, Iscon Ahmedabad
               </a>
             </div>

@@ -187,7 +187,7 @@ const OurProducts = () => {
                     {ele.title}
                   </motion.h2>
                   <motion.p
-                    className="text-gray-600 text-left"
+                    className="text-gray-600 text-left text-sm"
                     initial="hidden"
                     animate={sectionInView ? "visible" : "hidden"}
                     variants={cardElementFadeIn}
