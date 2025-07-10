@@ -275,7 +275,7 @@ const contactValidationSchema = Joi.object({
     tlds: { allow: ["com", "net"] },
   }),
 });
-                                                                                                                                                                                                                                                                                 
+
 // Api Handler Function
 
 const handler = async (req, res) => {
@@ -304,9 +304,10 @@ const handler = async (req, res) => {
     });
     let isSaved = await newContactDetails.save();
     if (isSaved) {
-
+      const firmSubject = "New Contact Details Received"
+      const userSubject = "Thank You For Contacting "
       await Promise.all([
-        await sendMail(MAIL, MAIL, firSubject, firmTemaplte(req.body)),
+        await sendMail(MAIL, MAIL, firmSubject, firmTemaplte(req.body)),
         await sendMail(MAIL, email, userSubject, userTemplate(req.body)),
       ]);
       return res.status(201).json({
