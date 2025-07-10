@@ -1,14 +1,14 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
-
+import Logo from "../assets/Logo/Logo.png"
 const Footer = () => {
     const nav=useNavigate()
     return (
         <div className="bg-[#82B3D1] px-5 md:px-10 py-8">
-            <div className="flex py-8 flex-col md:flex-row gap-8 md:gap-12">
+            <div className="flex py-6 flex-col md:flex-row gap-8 md:gap-12">
                 <div className="w-full md:w-1/2">
                     <div className="mb-6 text-lg font-semibold text-black">
-                        Logo Sas Beverages
+                        <img src={Logo}/>
                     </div>
                     <div className="flex   gap-3">
                         <input
@@ -25,76 +25,76 @@ const Footer = () => {
 
                 <div className="w-full md:w-1/2 flex flex-col md:flex-row gap-6 md:gap-8">
                     <div className="flex-1">
-                        <h2 className="heading2 !text-black !text-left mb-4">
+                        <h2 className="heading2 !text-black !text-left mb-4 !font-extrabold !text-xl">
                             Quick Links
                         </h2>
-                        <ul className="heading2 !text-left space-y-2 !text-sm ">
-                            <li className="relative group w-fit cursor-pointer hover:opacity-60" 
+                        <ul className="heading2 !text-left  space-y-2 !text-sm ">
+                            <li className="relative group w-fit cursor-pointer text-black/50 hover:opacity-90 hover:text-black/90  text-sm font-medium" 
                             onClick={()=>{
                                 nav("/")
                             }}>
                                 Home
-                                <div className="w-0 h-[3px] group-hover:w-full duration-500 absolute bg-gradient-to-r from-[#00EA87] to-[#78CBFF]"></div>
+                                <div className="w-0 h-[2.1px] group-hover:w-full duration-500 absolute bg-gradient-to-r from-gray-400 to-gray-700"></div>
                             </li>
-                            <li className="w-fit relative group cursor-pointer hover:opacity-60"
+                            <li className="w-fit relative group cursor-pointer  text-sm font-medium text-black/50 hover:opacity-90 hover:text-black/90"
                             onClick={()=>{
                                 nav("/product")
                             }}
                             >
                                 Product
-                                <div className="w-0 h-[3px] group-hover:w-full duration-500 absolute bg-gradient-to-r from-[#00EA87] to-[#78CBFF]"></div>
+                                <div className="w-0 h-[2.1px] group-hover:w-full duration-500 absolute bg-gradient-to-r from-gray-400 to-gray-700"></div>
                             </li>
-                            <li className="w-fit relative group cursor-pointer hover:opacity-60"
+                            <li className="w-fit relative group cursor-pointer  text-sm font-medium text-black/50 hover:opacity-90 hover:text-black/90"
                             onClick={()=>{
                                 nav("/contact-us")
                             }}
                             >
                                 Contact
-                                <div className="w-0 h-[3px] group-hover:w-full duration-500 absolute bg-gradient-to-r from-[#00EA87] to-[#78CBFF]"></div>
+                                <div className="w-0 h-[2.1px] group-hover:w-full duration-500 absolute bg-gradient-to-r from-gray-400 to-gray-700"></div>
                             </li>
                         </ul>
                     </div>
 
                     <div className="flex-1">
-                        <h2 className="heading2 !text-black !text-left mb-4">
+                        <h2 className="heading2 !text-black !text-left mb-4 !font-extrabold !text-xl">
                             Company
                         </h2>
                         <ul className="heading2 !text-left space-y-2 !text-sm">
-                            <li className="group relative w-fit cursor-pointer hover:opacity-60"
+                            <li className="group relative w-fit cursor-pointer text-sm font-medium text-black/50 hover:opacity-90 hover:text-black/90"
                             onClick={()=>{
                                 nav("/about-us")
                             }}
                             >
                                 About Us
-                                <div className="w-0 h-[3px] group-hover:w-full duration-500 absolute bg-gradient-to-r from-[#00EA87] to-[#78CBFF]"></div>
+                                <div className="w-0 h-[2.1px] group-hover:w-full duration-500 absolute bg-gradient-to-r from-gray-400 to-gray-700"></div>
                             </li>
-                            <li className="group relative w-fit cursor-pointer hover:opacity-60"
+                            <li className="group relative w-fit text-sm font-medium cursor-pointer text-black/50 hover:opacity-90 hover:text-black/90"
                             onClick={()=>{
                                 nav("/team")
                             }}
                             >
                                 Team
-                                <div className="w-0 h-[3px] group-hover:w-full duration-500 absolute bg-gradient-to-r from-[#00EA87] to-[#78CBFF]"></div>
+                                <div className="w-0 h-[2.1px] group-hover:w-full duration-500 absolute bg-gradient-to-r from-gray-400 to-gray-700"></div>
                             </li>
                         </ul>
                     </div>
 
                     <div className="flex-1">
-                        <h2 className="heading2 !text-black !text-left mb-4">
+                        <h2 className="heading2 !text-black !font-extrabold !text-xl !text-left mb-4">
                             Social Links
                         </h2>
                         <ul className="heading2 !text-left space-y-2 !text-sm">
-                            <li className="relative group w-fit cursor-pointer hover:opacity-60">
+                            <li className="relative group w-fit text-sm font-medium   cursor-pointer text-black/50 hover:opacity-90 hover:text-black/90">
                                 Contact Us
-                                <div className="w-0 h-[3px]  group-hover:w-full bg-gradient-to-r from-[#00EA87] to-[#78CBFF] absolute duration-500"></div>
+                                <div className="w-0 h-[2.1px]  group-hover:w-full bg-gradient-to-r from-gray-400 to-gray-700 absolute duration-500"></div>
                             </li>
-                            <li className="relative group w-fit cursor-pointer hover:opacity-60">
+                            <li className="relative group w-fit text-sm font-medium cursor-pointer text-black/50 hover:opacity-90 hover:text-black/90">
                                 Help Center
-                                <div className="w-0 h-[3px] group-hover:w-full bg-gradient-to-r from-[#00EA87] to-[#78CBFF] absolute duration-500"></div>
+                                <div className="w-0 h-[2.1px] group-hover:w-full bg-gradient-to-r from-gray-400 to-gray-700 absolute duration-500"></div>
                             </li>
-                            <li className="relative group w-fit cursor-pointer hover:opacity-60">
+                            <li className="relative group w-fit text-sm font-medium cursor-pointer text-black/50 hover:opacity-90 hover:text-black/90">
                                 Privacy Policy
-                                <div className="w-0 h-[3px] group-hover:w-full bg-gradient-to-r from-[#00EA87] to-[#78CBFF] absolute duration-500"></div>
+                                <div className="w-0 h-[2.1px] group-hover:w-full bg-gradient-to-r from-gray-400 to-gray-700 absolute duration-500"></div>
                             </li>
                         </ul>
                     </div>
@@ -103,7 +103,7 @@ const Footer = () => {
 
             <div className="bg-[#333333] h-0.5 w-full my-6"></div>
 
-            <div className="heading2 text-center md:text-left">
+            <div className="heading2 text-center md:text-left  !text-sm !font-bold !text-black/80">
                 ©2025 abtik.Design - All rights reserved.
             </div>
         </div>

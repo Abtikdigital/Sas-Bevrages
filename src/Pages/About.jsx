@@ -1,10 +1,6 @@
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import Navbar from "../Sections/Navbar";
-import { Phone } from "lucide-react";
-import { Mail } from "lucide-react";
-import { MapPin } from "lucide-react";
-import { Link } from "react-router-dom";
 import Footer from "../Sections/Footer";
 import TeamMember from "../Sections/TeamMember";
 

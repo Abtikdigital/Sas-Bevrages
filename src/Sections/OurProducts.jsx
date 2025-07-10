@@ -1,7 +1,14 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
-import Product1 from "../assets/Products/Product1.png";
+import Image1 from "../assets/Products/Product1.png";
+import Image2 from "../assets/Products/Product2.jpeg"
+import Image3 from "../assets/Products/Product3.jpeg"
+import Image4 from "../assets/Products/Product4.jpeg"
+import Image5 from "../assets/Products/Product5.jpeg"
+import Image6 from "../assets/Products/Product6.jpeg"
+import Image7 from "../assets/Products/Product7.jpeg"
+
 import { Star } from "lucide-react";
 
 const OurProducts = () => {
@@ -82,7 +89,7 @@ const OurProducts = () => {
       <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
         {[
           {
-            img: Product1,
+            img: Image1,
             title: "Premium Widget",
             description: "A versatile widget designed for seamless performance and durability.",
             price: "10",
@@ -90,7 +97,7 @@ const OurProducts = () => {
             details: "Made with eco-friendly materials, this widget offers unmatched reliability and style.",
           },
           {
-            img: Product1,
+            img: Image2,
             title: "Elite Gadget",
             description: "Compact and powerful, perfect for everyday use.",
             price: "12",
@@ -98,7 +105,7 @@ const OurProducts = () => {
             details: "Featuring cutting-edge technology, this gadget ensures top performance.",
           },
           {
-            img: Product1,
+            img: Image3,
             title: "Smart Tool",
             description: "Innovative design for enhanced productivity.",
             price: "15",
@@ -106,7 +113,7 @@ const OurProducts = () => {
             details: "Engineered for precision, this tool is a must-have for professionals.",
           },
           {
-            img: Product1,
+            img: Image4,
             title: "Classic Device",
             description: "Timeless design with modern functionality.",
             price: "8",
@@ -114,7 +121,7 @@ const OurProducts = () => {
             details: "Combines elegance with practicality for a unique user experience.",
           },
           {
-            img: Product1,
+            img: Image5,
             title: "Pro Accessory",
             description: "Enhance your setup with this sleek accessory.",
             price: "20",
@@ -122,7 +129,7 @@ const OurProducts = () => {
             details: "High-quality materials ensure longevity and style.",
           },
           {
-            img: Product1,
+            img: Image6,
             title: "Eco-Friendly Item",
             description: "Sustainable and stylish for the modern user.",
             price: "18",
@@ -148,13 +155,13 @@ const OurProducts = () => {
               <div className="absolute w-full h-full bg-white rounded-xl overflow-hidden [backface-visibility:hidden]">
                 <motion.img
                   src={ele.img}
-                  className="w-full h-48 object-cover rounded-t-xl"
+                  className="w-full h-60 object-cover rounded-t-xl"
                   initial="hidden"
                   animate={sectionInView ? "visible" : "hidden"}
                   variants={cardElementFadeIn}
                   custom={index + 2}
                 />
-                <div className="p-4 space-y-2">
+                <div className="p-4 space-y-2"> 
                   <motion.div
                     className="flex flex-col space-y-2 items-start md:flex-row md:justify-between text-lg font-semibold "
                     initial="hidden"
@@ -187,7 +194,7 @@ const OurProducts = () => {
                     {ele.title}
                   </motion.h2>
                   <motion.p
-                    className="text-gray-600 text-left text-sm"
+                    className="text-gray-600 text-left text-sm truncate"
                     initial="hidden"
                     animate={sectionInView ? "visible" : "hidden"}
                     variants={cardElementFadeIn}

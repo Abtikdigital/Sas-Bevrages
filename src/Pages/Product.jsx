@@ -6,6 +6,8 @@ import OurProductionProcess from "../Sections/OurProductionProcess";
 import OurProducts from "../Sections/OurProducts";
 import ProductHeroImage from "../assets/Hero/Image1.png";
 
+
+
 const Product = () => {
   // Animation variants for section
   const sectionFadeIn = {
