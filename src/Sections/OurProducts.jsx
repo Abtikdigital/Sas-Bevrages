@@ -1,7 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
-import Image1 from "../assets/Products/Product1.png";
+import Image1 from "../assets/Products/Product1.jpeg";
 import Image2 from "../assets/Products/Product2.jpeg"
 import Image3 from "../assets/Products/Product3.jpeg"
 import Image4 from "../assets/Products/Product4.jpeg"
