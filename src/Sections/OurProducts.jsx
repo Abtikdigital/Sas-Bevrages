@@ -82,7 +82,7 @@ const OurProducts = () => {
         animate={sectionInView ? "visible" : "hidden"}
         variants={cardElementFadeIn}
         custom={1}
-        className="text-xl text-center text-gray-700 max-w-2xl mx-auto"
+        className="text-lg font-semibold text-center text-[#757575] max-w-2xl mx-auto"
       >
         Discover our exclusive range of products, crafted with care to bring you the best quality and experience.
       </motion.h3>

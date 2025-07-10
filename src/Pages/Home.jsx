@@ -108,7 +108,7 @@ const Home = () => {
           The night is dark and full of terrors. What is dead may never die. And now his watch is ended. All men must die.
         </motion.h2>
         <motion.div variants={elementFadeIn} custom={2}>
-          <button className="linear-green-blue-btn" style={{ fontFamily: "Lilita One" }}>
+          <button className="linear-green-blue-btn" >
             Contact Us
           </button>
         </motion.div>
@@ -193,7 +193,7 @@ const Home = () => {
                 src={AboutUsImage}
                 className="w-full hover:-translate-y-2.5 transition-all cursor-pointer duration-300"
               />
-              <h2 className="heading2">Name{index + 1}</h2>
+              <h2 className="heading2 !text-black !text-xl !font-extrabold">Name{index + 1}</h2>
               <h3 className="heading2">Position{index + 1}</h3>
             </motion.div>
           ))}
@@ -257,7 +257,7 @@ const Home = () => {
             rows={3}
             {...register("message")}
           ></textarea>
-          <button className="linear-green-blue-btn text-white w-fit" type="submit" style={{ fontFamily: "Lilita One" }}>
+          <button className="linear-green-blue-btn text-white w-fit" type="submit" >
             Submit
           </button>
         </form>

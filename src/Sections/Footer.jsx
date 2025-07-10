@@ -16,7 +16,7 @@ const Footer = () => {
                             className="bg-[#141414] heading-2 text-[#BEBEBE] p-2.5 px-4 rounded-lg  min-w-0"
                         />
                         <button className="linear-green-blue-btn whitespace-nowrap"
-                            style={{ fontFamily: "Lilita One" }}
+                          
                         >
                             Submit
                         </button>

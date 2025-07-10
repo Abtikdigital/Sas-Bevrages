@@ -80,9 +80,7 @@ const Product = () => {
           custom={2}
           className="flex justify-center items-center"
         >
-          <button className="linear-green-blue-btn" style={{
-            fontFamily:"Lilita One"
-          }}>Contact Us</button>
+          <button className="linear-green-blue-btn" >Contact Us</button>
         </motion.div>
       </motion.section>
 

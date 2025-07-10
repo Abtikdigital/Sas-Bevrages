@@ -80,10 +80,7 @@ const Navbar = () => {
                     <button
                         onClick={handleContactClick}
                         className="linear-green-blue-btn "
-                        style={{
-                            fontFamily: "Lilita One",
-
-                        }}
+                    
                     >
                         Contact Us
                     </button>
