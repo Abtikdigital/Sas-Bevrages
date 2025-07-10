@@ -11,7 +11,9 @@ import OurProducts from "../Sections/OurProducts";
 import TeamMember from "../Sections/TeamMember";
 
 import HeroImage from "../assets/Hero/105349.jpg";
-import AboutUsImage from "../assets/Products/Product1.jpeg";
+import AboutUsImage1 from "../assets/About/Image1.jpg";
+import AboutUsImage2 from "../assets/About/Image2.jpg";
+import AboutUsImage3 from "../assets/About/Image3.jpg";
 import Image1 from "../assets/Hero/Slider/Image1.jpeg"
 import Image2 from "../assets/Hero/Slider/Image2.jpeg"
 import Image3 from "../assets/Hero/Slider/Image3.jpeg"
@@ -187,7 +189,7 @@ const Home = () => {
           The night is dark and full of terrors. What is dead may never die. And now his watch is ended. All men must die.
         </h3>
         <div className="flex flex-col md:flex-row gap-10">
-          {[1, 2, 3].map((_, index) => (
+          {[AboutUsImage1, AboutUsImage2, AboutUsImage3].map((src, index) => (
             <motion.div
               key={index}
               custom={index}
@@ -197,7 +199,7 @@ const Home = () => {
               className="w-full md:w-1/3 rounded-lg space-y-2"
             >
               <img
-                src={AboutUsImage}
+                src={src}
                 className="w-full hover:-translate-y-2.5 transition-all cursor-pointer duration-300"
               />
               <h2 className="heading2 !text-black !text-xl !font-extrabold">Name{index + 1}</h2>
