@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
-import ProcessImage from "../assets/Products/Product1.png";
+import ProcessImage from "../assets/Products/Product1.jpeg";
 
 const OurProductionProcess = () => {
   // Animation variants for section

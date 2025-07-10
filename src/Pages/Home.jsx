@@ -11,10 +11,11 @@ import OurProducts from "../Sections/OurProducts";
 import TeamMember from "../Sections/TeamMember";
 
 import HeroImage from "../assets/Hero/105349.jpg";
-import AboutUsImage from "../assets/Products/Product1.png";
+import AboutUsImage from "../assets/Products/Product1.jpeg";
 import Image1 from "../assets/Hero/Slider/Image1.jpeg"
 import Image2 from "../assets/Hero/Slider/Image2.jpeg"
 import Image3 from "../assets/Hero/Slider/Image3.jpeg"
+import { ChevronLeft, ChevronRight } from "lucide-react";
 
 
 
@@ -143,18 +144,18 @@ const Home = () => {
           </div>
 
           {/* Mobile Arrows */}
-          <div className="md:hidden">
+          <div className="">
             <button
               onClick={prevSlide}
-              className="absolute left-4 top-1/2 transform -translate-y-1/2 bg-black bg-opacity-50 text-white p-2 rounded-full"
+              className="absolute left-4 cursor-pointer top-1/2 transform -translate-y-1/2 bg-black/80 bg-opacity-50 text-white p-2 rounded-full"
             >
-              ←
+              <ChevronLeft/>
             </button>
             <button
               onClick={nextSlide}
-              className="absolute right-4 top-1/2 transform -translate-y-1/2 bg-black bg-opacity-50 text-white p-2 rounded-full"
+              className="absolute cursor-pointer right-4 top-1/2 transform -translate-y-1/2 bg-black/80 bg-opacity-50 text-white p-2 rounded-full"
             >
-              →
+              <ChevronRight/>
             </button>
           </div>
 
