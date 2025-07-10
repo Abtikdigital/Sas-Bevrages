@@ -3,6 +3,7 @@ import { useInView } from "react-intersection-observer";
 import Footer from "../Sections/Footer";
 import Navbar from "../Sections/Navbar";
 import TeamMember from "../Sections/TeamMember";
+import Slider from "../Sections/Slider";
 
 const Team = () => {
   // Animation variants for section
@@ -79,23 +80,7 @@ const Team = () => {
       </motion.section>
 
       {/* Image Section */}
-      <motion.section
-        ref={imageRef}
-        initial="hidden"
-        animate={imageInView ? "visible" : "hidden"}
-        variants={sectionFadeIn}
-        className="px-5 md:px-10 py-10"
-      >
-        <motion.div
-          initial="hidden"
-          animate={imageInView ? "visible" : "hidden"}
-          variants={elementFadeIn}
-          custom={0}
-          className="bg-[#82B3D1] min-h-94 rounded-4xl"
-        >
-          check
-        </motion.div>
-      </motion.section>
+   <Slider/>
 
       {/* Team Member Section */}
       <motion.section

@@ -5,6 +5,7 @@ import Navbar from "../Sections/Navbar";
 import OurProductionProcess from "../Sections/OurProductionProcess";
 import OurProducts from "../Sections/OurProducts";
 import ProductHeroImage from "../assets/Hero/Image1.png";
+import Slider from "../Sections/Slider";
 
 
 
@@ -85,22 +86,7 @@ const Product = () => {
       </motion.section>
 
       {/* Image Section */}
-      <motion.section
-        ref={imageRef}
-        initial="hidden"
-        animate={imageInView ? "visible" : "hidden"}
-        variants={sectionFadeIn}
-        className="px-5 md:px-10 py-5 md:py-10"
-      >
-        <motion.img
-          initial="hidden"
-          animate={imageInView ? "visible" : "hidden"}
-          variants={elementFadeIn}
-          custom={0}
-          src={ProductHeroImage}
-          className="rounded-4xl"
-        />
-      </motion.section>
+ <Slider/>
 
       {/* Our Production Process Section */}
       <motion.section
