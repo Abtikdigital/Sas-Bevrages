@@ -12,6 +12,12 @@ import TeamMember from "../Sections/TeamMember";
 
 import HeroImage from "../assets/Hero/105349.jpg";
 import AboutUsImage from "../assets/Products/Product1.png";
+import Image1 from "../assets/Hero/Slider/Image1.jpeg"
+import Image2 from "../assets/Hero/Slider/Image2.jpeg"
+import Image3 from "../assets/Hero/Slider/Image3.jpeg"
+import Image4 from "../assets/Hero/Slider/Image3.jpeg"
+
+
 
 // Animation Variants
 const sectionFadeIn = {
@@ -40,7 +46,7 @@ const Home = () => {
   } = useForm();
 
   const [currentSlide, setCurrentSlide] = useState(0);
-  const sliderImages = [HeroImage, AboutUsImage, HeroImage, AboutUsImage, HeroImage];
+  const sliderImages = [Image1,Image2,Image3,Image4];
 
   // Auto Slide Logic
   useEffect(() => {

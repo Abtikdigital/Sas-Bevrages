@@ -8,7 +8,7 @@ const Footer = () => {
             <div className="flex py-6 flex-col md:flex-row gap-8 md:gap-12">
                 <div className="w-full md:w-1/2">
                     <div className="mb-6 text-lg font-semibold text-black">
-                        <img src={Logo}/>
+                        <img src={Logo} className="w-32 h-32"/>
                     </div>
                     <div className="flex   gap-3">
                         <input
