@@ -14,8 +14,8 @@ import HeroImage from "../assets/Hero/105349.jpg";
 import AboutUsImage from "../assets/Products/Product1.png";
 import Image1 from "../assets/Hero/Slider/Image1.jpeg"
 import Image2 from "../assets/Hero/Slider/Image2.jpeg"
-import Image3 from "../assets/Hero/Slider/Image3.jpeg"
-import Image4 from "../assets/Hero/Slider/Image3.jpeg"
+
+
 
 
 
@@ -46,7 +46,7 @@ const Home = () => {
   } = useForm();
 
   const [currentSlide, setCurrentSlide] = useState(0);
-  const sliderImages = [Image1,Image2,Image3,Image4];
+  const sliderImages = [Image1,Image2];
 
   // Auto Slide Logic
   useEffect(() => {
