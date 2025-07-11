@@ -35,21 +35,21 @@ const Footer = () => {
                             Contact Us
                         </h2>
                         <ul className="heading2 !text-left space-y-3 !text-sm">
-                            <li className="group w-fit cursor-pointer text-sm font-medium text-black/70 hover:text-black/90 flex items-center gap-3">
+                            <li className="group w-fit cursor-pointer text-sm font-medium text-black/50 hover:text-black/90 flex items-center gap-3">
                                 <FontAwesomeIcon icon={faEnvelope} className="text-gray-600 w-5 h-5" />
                                 <span className="relative">
                                     info@abtik.design
                                     <div className="absolute bottom-0 h-[2.1px] w-full hidden group-hover:block bg-gradient-to-r from-gray-400 to-gray-700"></div>
                                 </span>
                             </li>
-                            <li className="group w-fit cursor-pointer text-sm font-medium text-black/70 hover:text-black/90 flex items-center gap-3">
+                            <li className="group w-fit cursor-pointer text-sm font-medium text-black/50 hover:text-black/90 flex items-center gap-3">
                                 <FontAwesomeIcon icon={faPhone} className="text-gray-600 w-5 h-5" />
                                 <span className="relative">
                                     +1 (555) 123-4567
                                     <div className="absolute bottom-0 h-[2.1px] w-full hidden group-hover:block bg-gradient-to-r from-gray-400 to-gray-700"></div>
                                 </span>
                             </li>
-                            <li className="group w-fit cursor-pointer text-sm font-medium text-black/70 hover:text-black/90 flex items-start gap-3">
+                            <li className="group w-fit cursor-pointer text-sm font-medium text-black/50 hover:text-black/90 flex items-start gap-3">
                                 <FontAwesomeIcon icon={faMapMarkerAlt} className="text-gray-600 w-5 h-5 mt-0.5" />
                                 <span className="relative">
                                     123 Design Street<br />Creative City, CC 12345
