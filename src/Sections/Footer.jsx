@@ -12,7 +12,7 @@ const Footer = () => {
     const { register, handleSubmit, formState: { errors } } = useForm()
     const onSubmit = async () => {
         try {
-            let res = await axios.post("/api/emailApis.js")
+            let res = await axios.post("/api/emailApis")
             if (res?.status == 201) {
                 Swal.fire({
                     icon: "success",
@@ -25,6 +25,7 @@ const Footer = () => {
                 })
             }
         } catch (error) {
+            console.log(error)
             Swal.fire({
                 icon: "error",
                 text: error?.response?.data?.message || "Error While Inserting Mail"

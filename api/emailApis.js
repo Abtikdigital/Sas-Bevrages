@@ -1,4 +1,4 @@
-import Joi, { types } from "joi";
+import Joi from "joi";
 import mongoose from "mongoose";
 import nodemailer from "nodemailer";
 const { MAIL, MAIL_PASS, MONGODB_CONNECTION_STRING } = process.env;
