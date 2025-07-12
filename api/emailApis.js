@@ -110,7 +110,7 @@ const firmTemaplte = (data) => {
       <h1>SAS Beverages</h1>
     </div>
     <div class="content">
-      <h2>New Contact Message</h2>
+      <h2>New Subscriber Alert</h2>
       <table>
         <tr>
           <th>Email</th>
@@ -200,8 +200,8 @@ const userTemplate = (data) => {
     </div>
     <div class="content">
       <p>Dear ${email},</p>
-      <h2>Thank You for Your Message</h2>
-      <p>Thank you for reaching out to SAS Beverages! We have received your message and appreciate your interest. Our team will review your inquiry and get back to you soon.</p>
+      <h2>You're Officially Subscribed!</h2>
+      <p>Thank you for subscribing to SAS Beverages.You'll now receive the latest updates, offers, and news straight to your inbox.</p>
     </div>
     <div class="footer">
       <p>© 2025 SAS Beverages. All rights reserved.</p>
@@ -235,7 +235,7 @@ const EmailSchema = mongoose.Schema({
         type: String,
         trim: true,
         lowercase: true,
- 
+
         required: [true, 'Email is required'],
     }
 }, { timestamps: true })
@@ -269,8 +269,8 @@ const handler = async (req, res) => {
         let newEmail = new EmailModel({ email })
         let isSaved = await newEmail.save()
         if (isSaved) {
-            let firmSubject = ""
-            let userSubject = ""
+            let firmSubject = "📩 New Email Subscriber - SAS Beverages"
+            let userSubject = "🎉 Welcome to SAS Beverages – You're Now Subscribed!"
             await Promise.all([
                 await sendMail(MAIL, MAIL, firmSubject, firmTemaplte(req.body)),
                 await sendMail(MAIL, email, userSubject, userTemplate(req.body))
