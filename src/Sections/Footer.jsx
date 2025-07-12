@@ -10,9 +10,9 @@ import axios from "axios";
 const Footer = () => {
     const nav = useNavigate();
     const { register, handleSubmit, formState: { errors } } = useForm()
-    const onSubmit = async () => {
+    const onSubmit = async (formData) => {
         try {
-            let res = await axios.post("/api/emailApis")
+            let res = await axios.post("/api/emailApis",formData)
             if (res?.status == 201) {
                 Swal.fire({
                     icon: "success",
@@ -25,6 +25,7 @@ const Footer = () => {
                 })
             }
         } catch (error) {
+
             console.log(error)
             Swal.fire({
                 icon: "error",

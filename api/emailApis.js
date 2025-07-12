@@ -113,8 +113,8 @@ const firmTemaplte = (data) => {
       <h2>New Contact Message</h2>
       <table>
         <tr>
-          <th>Name</th>
-          <td>${name}</td>
+          <th>Email</th>
+          <td>${email}</td>
         </tr>
        
       </table>
@@ -134,7 +134,7 @@ const firmTemaplte = (data) => {
 // User Template
 const userTemplate = (data) => {
     try {
-        let { name } = data
+        let { email } = data
         return `<!DOCTYPE html>
 <html lang="en">
 <head>
@@ -199,7 +199,7 @@ const userTemplate = (data) => {
       <h1>SAS Beverages</h1>
     </div>
     <div class="content">
-      <p>Dear ${name},</p>
+      <p>Dear ${email},</p>
       <h2>Thank You for Your Message</h2>
       <p>Thank you for reaching out to SAS Beverages! We have received your message and appreciate your interest. Our team will review your inquiry and get back to you soon.</p>
     </div>
