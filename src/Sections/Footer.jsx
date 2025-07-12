@@ -12,7 +12,7 @@ const Footer = () => {
     const { register, handleSubmit, formState: { errors } } = useForm()
     const onSubmit = async () => {
         try {
-            let res = await axios.post("/api/contactApis.js")
+            let res = await axios.post("/api/emailApis.js")
             if (res?.status == 201) {
                 Swal.fire({
                     icon: "success",
