@@ -107,31 +107,31 @@ const Navbar = () => {
                         <ul className="flex flex-col w-full space-y-2 pt-3 transition-all duration-700">
                             <Link
                                 to={"/"}
-                                className="text-[#757575]  border bg-gradient-to-r from-[#00EA87]/20 rounded-lg  to-[#78CBFF]/40 text-center group py-2  duration-500 relative transition-all text-[0.95rem]  font-medium w-full hover:font-bold hover:text-black"
+                                className="text-[#757575]  border bg-[#0064eb]/10  rounded-lg   text-center group py-2  duration-500 relative transition-all text-[0.95rem]  font-medium w-full hover:font-bold hover:text-black"
                             >
                                 Home
                             </Link>
                             <Link
                                 to={"/about-us"}
-                                className="text-[#757575] border bg-gradient-to-r from-[#00EA87]/20  rounded-lg to-[#78CBFF]/40 text-center duration-500 group py-2 relative transition-all w-full text-[0.95rem]  font-semibold hover:font-bold hover:text-black"
+                                className="text-[#757575] border bg-[#0064eb]/10   rounded-lg  text-center duration-500 group py-2 relative transition-all w-full text-[0.95rem]  font-semibold hover:font-bold hover:text-black"
                             >
                                 About
                             </Link>
                             <Link
                                 to={"/product"}
-                                className="text-[#757575] border bg-gradient-to-r from-[#00EA87]/20 rounded-lg  to-[#78CBFF]/40 text-center duration-500 group py-2 relative transition-all w-full text-[0.95rem] font-semibold hover:font-bold hover:text-black"
+                                className="text-[#757575] border bg-[#0064eb]/10  rounded-lg   text-center duration-500 group py-2 relative transition-all w-full text-[0.95rem] font-semibold hover:font-bold hover:text-black"
                             >
                                 Product
                             </Link>
                             <Link
                                 to={"/team"}
-                                className="text-[#757575] border bg-gradient-to-r from-[#00EA87]/20 rounded-lg  to-[#78CBFF]/40 text-center relative duration-500 group py-2 transition-all w-full text-[0.95rem]  font-semibold hover:font-bold hover:text-black"
+                                className="text-[#757575] border bg-[#0064eb]/10   rounded-lg   text-center relative duration-500 group py-2 transition-all w-full text-[0.95rem]  font-semibold hover:font-bold hover:text-black"
                             >
                                 Team
                             </Link>
                             <Link
                                 to={"/contact-us"}
-                                className="text-[#757575] border bg-gradient-to-r from-[#00EA87]/20  rounded-lg to-[#78CBFF]/40 text-center relative duration-500 py-2 group transition-all w-full text-[0.95rem]  font-semibold hover:font-bold hover:text-black"
+                                className="text-[#757575] border bg-[#0064eb]/10  rounded-lg  text-center relative duration-500 py-2 group transition-all w-full text-[0.95rem]  font-semibold hover:font-bold hover:text-black"
                             >
                                 Contact
                             </Link>
