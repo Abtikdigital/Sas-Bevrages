@@ -255,6 +255,9 @@ const emailValidationSchema = Joi.object({
 
 
 const handler = async (req, res) => {
+    if (req.method != "POST") {
+        return res.status(405).json({ isSuccess: false, message: "Only Post Method Is Allowed" })
+    }
     try {
         await dbConnection()
         let { email } = req.body
