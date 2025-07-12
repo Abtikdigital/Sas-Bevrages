@@ -4,9 +4,34 @@ import Logo from "../assets/Logo/Logo.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope, faPhone, faMapMarkerAlt } from "@fortawesome/free-solid-svg-icons";
 import { faFacebookF, faLinkedinIn, faInstagram } from "@fortawesome/free-brands-svg-icons";
-
+import { useForm } from "react-hook-form";
+import Swal from "sweetalert2";
+import axios from "axios";
 const Footer = () => {
     const nav = useNavigate();
+    const { register, handleSubmit, formState: { errors } } = useForm()
+    const onSubmit = async () => {
+        try {
+            let res = await axios.post("/api/contactApis.js")
+            if (res?.status == 201) {
+                Swal.fire({
+                    icon: "success",
+                    text: res?.data?.message || "Email Subscribed Successfully"
+                })
+            } else {
+                Swal.fire({
+                    icon: "error",
+                    text: "Error While Subscribing Email"
+                })
+            }
+        } catch (error) {
+            Swal.fire({
+                icon: "error",
+                text: error?.response?.data?.message || "Error While Inserting Mail"
+            })
+        }
+    }
+
     return (
         <div className="bg-[#82B3D1] px-5 md:px-10 py-8">
             {/* Link Section */}
@@ -16,15 +41,21 @@ const Footer = () => {
                     <div className="mb-6 text-lg font-semibold text-black">
                         <img src={Logo} className="w-32 h-32" alt="Logo" />
                     </div>
-                    <div className="flex flex-col sm:flex-row gap-3">
+                    <form className="flex flex-col sm:flex-row gap-3" onSubmit={handleSubmit(onSubmit)}>
                         <input
                             placeholder="Enter Mail"
+                            {...register("email", {
+                                required: "* Email Is Required"
+                            })}
                             className="bg-[#141414] heading-2 text-[#BEBEBE] p-2.5 px-4 rounded-lg min-w-0 flex-1"
                         />
-                        <button className="linear-green-blue-btn whitespace-nowrap">
+                        <button className="linear-green-blue-btn whitespace-nowrap"
+
+                        >
                             Submit
                         </button>
-                    </div>
+                    </form>
+                    {errors?.email&&<div className="heading2 pt-1 !text-left !text-red-500 ">{errors?.email?.message}</div>}
                 </div>
 
                 {/* Links and Contact Section */}
