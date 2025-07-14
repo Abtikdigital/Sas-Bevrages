@@ -84,7 +84,7 @@ const OurProducts = () => {
         custom={1}
         className="text-lg font-semibold text-center text-[#757575] max-w-2xl mx-auto"
       >
-        Explore our carefully curated selection of premium bottled water and refreshing sodas — crafted to deliver purity, taste, and satisfaction for every lifestyle.
+      Explore our carefully curated selection of premium bottled water and refreshing sodas — crafted to deliver purity, taste, and satisfaction for every lifestyle.
       </motion.h3>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
         {[
