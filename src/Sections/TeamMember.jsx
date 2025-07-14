@@ -60,8 +60,9 @@ const TeamMember = () => {
           custom={1}
           className="heading2"
         >
-          The night is dark and full of terrors. What is dead may never die. And
-          now his watch is ended. All men must die.
+         Our success is driven by a dedicated team of industry professionals who bring expertise, innovation, and passion to every stage — from production to delivery — ensuring you get the best in every bottle.
+
+
         </motion.h3>
         <div className="flex flex-col md:flex-row gap-10">
           {[

@@ -62,7 +62,7 @@ const Product = () => {
           custom={0}
           className="heading1 "
         >
-          Build your landings in minutes
+         Explore Our Refreshing Range
         </motion.h1>
         <motion.h2
           initial="hidden"
@@ -71,8 +71,9 @@ const Product = () => {
           custom={1}
           className="heading2"
         >
-          The night is dark and full of terrors. What is dead may never die. And
-          now his watch is ended. All men must die.
+         At SAS Beverage, we offer a refreshing selection of bottled water and sodas, crafted with quality and care to suit active lifestyles, family needs, and retail demands.
+
+
         </motion.h2>
         <motion.div
           initial="hidden"

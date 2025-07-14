@@ -101,10 +101,10 @@ const Home = () => {
         className="px-5 md:px-10 flex flex-col space-y-5 py-5 md:space-y-10 md:py-10 justify-center items-center"
       >
         <motion.h1 variants={elementFadeIn} custom={0} className="heading1 tracking-wider">
-          Build your landings in minutes
+          Stay Hydrated. Stay Energized.
         </motion.h1>
         <motion.h2 variants={elementFadeIn} custom={1} className="heading2">
-          The night is dark and full of terrors. What is dead may never die. And now his watch is ended. All men must die.
+          Discover our premium water and soda range—perfect for fitness lovers, families, and smart retailers. Freshness delivered with every sip.
         </motion.h2>
         <motion.div variants={elementFadeIn} custom={2}>
           <button className="linear-green-blue-btn" >
@@ -124,9 +124,11 @@ const Home = () => {
         variants={sectionFadeIn}
         className="px-5 md:px-10 py-5 md:py-10 space-y-5 md:space-y-10"
       >
-        <h2 className="heading1">About Us</h2>
+        <h2 className="heading1">About SAS Beverage</h2>
         <h3 className="heading2">
-          The night is dark and full of terrors. What is dead may never die. And now his watch is ended. All men must die.
+          At SAS Beverage, we deliver premium water and soda crafted with care and quality. With a modern production facility and a passion for purity, we serve health-conscious individuals, families, and retailers with refreshing, reliable beverages.
+
+
         </h3>
         <div className="flex flex-col md:flex-row gap-10">
           {[AboutUsImage1, AboutUsImage2, AboutUsImage3].map((src, index) => (

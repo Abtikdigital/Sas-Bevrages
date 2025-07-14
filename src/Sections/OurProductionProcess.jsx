@@ -57,8 +57,8 @@ const OurProductionProcess = () => {
         custom={1}
         className="heading2"
       >
-        The night is dark and full of terrors. What is dead may never die. And
-        now his watch is ended. All men must die.
+       SAS Beverage follows a fully automated, hygienic production process using purified water and quality ingredients.
+Every bottle goes through strict quality checks to ensure freshness, safety, and consistent taste.
       </motion.p>
       <motion.div
         initial="hidden"

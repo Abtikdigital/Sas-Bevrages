@@ -56,7 +56,7 @@ const about = () => {
           custom={0}
           className="heading1"
         >
-          Build your landings in minutes
+          Who We Are, What We Stand For
         </motion.h1>
         <motion.h2
           initial="hidden"
@@ -65,8 +65,7 @@ const about = () => {
           custom={1}
           className="heading2"
         >
-          The night is dark and full of terrors. What is dead may never die. And
-          now his watch is ended. All men must die.
+          At SAS Beverage, we deliver premium water and soda crafted with care and quality. With a modern production facility and a passion for purity, we serve health-conscious individuals, families, and retailers with refreshing, reliable beverages.
         </motion.h2>
         <motion.div
           initial="hidden"
@@ -101,9 +100,9 @@ const about = () => {
             About Company
           </motion.h2>
           {[
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ut mauris nec ante iaculis iaculis eget et urna. Mauris pellentesque aliquam lacus, non interdum nunc facilisis sit amet.",
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ut mauris nec ante iaculis iaculis eget et urna. Mauris pellentesque aliquam lacus, non interdum nunc facilisis sit amet.",
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ut mauris nec ante iaculis iaculis eget et urna. Mauris pellentesque aliquam lacus, non interdum nunc facilisis sit amet.",
+            "SAS Beverage offers premium bottled water and sodas made for health-conscious individuals, families, and retailers. We focus on purity, taste, and convenience to fit today’s active lifestyles.",
+            "Our production units follow strict hygiene and quality standards to ensure every bottle is safe and fresh. From sourcing to packaging, each step is carefully monitored for consistency.",
+            "Driven by innovation and trust, we aim to deliver reliable hydration across every channel. With SAS Beverage, every sip reflects our promise of quality and care.",
           ].map((text, index) => (
             <motion.div
               key={index}
